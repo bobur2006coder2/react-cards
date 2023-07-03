@@ -1,7 +1,7 @@
 import React from 'react'
 import imgone from './img/apple.jpg'
 import imgpe from './img/imgPe.avif'
-import imgeor from './img/imgor.jpg'
+import imgeor from './img/imgor.jpg' 
 
 export default function Header() {
     const forCancel = (e) => {
@@ -12,10 +12,10 @@ export default function Header() {
     }
 
     const price = (e) => {
-        if (e.target.textContent == "show price") {
+        if (e.target.textContent === "show price") {
             e.target.transition = "all 4s easy"
             e.target.textContent = 15 + "$"
-        } else if (e.target.textContent == "15$") {
+        } else if (e.target.textContent === "15$") {
             e.target.textContent = "show price"
             e.target.transition = "all 4s easy"
         }
@@ -24,22 +24,22 @@ export default function Header() {
 
 
     const priceone = (e) => {
-        if (e.target.textContent == "show price") {
+        if (e.target.textContent === "show price") {
             e.target.transition = "all 4s easy"
             e.target.textContent = 25 + "$"
-        } else if (e.target.textContent == "25$") {
+        } else if (e.target.textContent === "25$") {
             e.target.textContent = "show price"
-            e.target.transition = "all 4s easy"
+            e.target.transition = "all 4s easy" 
         }
 
     }
 
 
     const pricetwo = (e) => {
-        if (e.target.textContent == "show price") {
-            e.target.transition = "all 4s easy"
+        if (e.target.textContent === "show price") {
+            e.target.transition = "all 4s easy" 
             e.target.textContent = 35 + "$"
-        } else if (e.target.textContent == "35$") {
+        } else if (e.target.textContent === "35$") {
             e.target.textContent = "show price"
             e.target.transition = "all 4s easy"
         }
@@ -48,16 +48,16 @@ export default function Header() {
     const delFun = (e) => {
         let elcha = document.querySelector("#deleteBtn")
         elcha.classList.toggle("hidden")
-        let card = document.querySelectorAll("#card-contain")
+        // let card = document.querySelectorAll("#card-contain")
         let addi = document.querySelector(".addi")
         let one = document.querySelector(".he")
         let two = document.querySelector(".hetwo")
         let three = document.querySelector(".hethree")
-        if (addi.textContent == "Apple") {
+        if (addi.textContent === "Apple") { 
             console.log(one.remove())
-        } else if (addi.textContent == "Orange") {
+        } else if (addi.textContent === "Orange") {
             console.log(three.remove());
-        } else if (addi.textContent == "Peach") {
+        } else if (addi.textContent === "Peach") {
             console.log(two.remove());
         }
 
@@ -85,7 +85,7 @@ export default function Header() {
         let elcha = document.querySelector("#deleteBtn")
         console.log(elcha.classList.toggle("hidden"));
         let addi = document.querySelector(".addi")
-        addi.textContent = "Orange"
+        addi.textContent = "Orange" 
     }
 
     return (
@@ -94,7 +94,7 @@ export default function Header() {
 
             <div className="max-w-screen-xl mx-auto ">
                 <h1 className='font-bold text-4xl capitalize my-5'>java script пратиника</h1>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center gap-28 ">
 
                     <div className=" w-[20%] border-solid border-red-600 border-2 p-4 he" id='card-contain'>
 
